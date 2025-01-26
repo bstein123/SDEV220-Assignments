@@ -1,0 +1,17 @@
+# Brianna Stein
+# SDEV220 M02 Lab
+# The GPA Test app tests if a student qualifies to be on the deals list or honor roll. 
+# #If the students GPA is >3.5 it will print a message stating the student made the deans list. 
+# #If the students GPA is >3.25, it will print a message stating the student made the honor roll.
+while True:
+    lastname =input("enter the student's last name: ")
+    if lastname == "ZZZ":
+        break
+    firstname = input("enter the student's first name: ")
+    GPA = float(input("enter the student's GPA: "))
+    
+    if GPA >= 3.5:
+        print(firstname, lastname, "has made the deans list")
+    else:
+        if GPA >= 3.25:
+            print(firstname, lastname, "has made the honor roll")
